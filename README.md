@@ -1,16 +1,50 @@
-# React + Vite
+# IntelliLearn
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Intelligent Detection and Personalized Resolution of Student Learning Gaps
 
-Currently, two official plugins are available:
+IntelliLearn is a web application designed to identify students' learning gaps through diagnostic assessments and provide targeted revision recommendations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Diagnostic assessments in Mathematics, Physics, Computer Networking, and AI & Neural Networks
+- Concept-level performance analysis
+- Rule-based learning-gap detection
+- Personalized revision recommendations
+- Student authentication and assessment history
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technology Stack
 
-## Expanding the ESLint configuration
+- Frontend: React.js, Vite, JavaScript, CSS
+- Backend: Node.js, Express.js
+- Database: PostgreSQL
+- Authentication: JWT and bcrypt
+- AI/Ml: Rule-based analysis
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+
+- `src/` — Frontend application
+- `public/` — Public assets
+- `server/` — Backend API and database schema
+
+## Getting Started
+
+Install dependencies in the project root:
+
+```bash
+npm install
+npm run dev
+```
+
+For the backend, open a separate terminal:
+
+```bash
+cd server
+npm install
+npm start
+```
+
+Configure the required environment variables in `server/.env` before starting the backend. Never commit secrets or database credentials to GitHub.
+
+## Current Status
+
+This prototype uses predefined diagnostic questions and transparent rules to identify potential learning gaps. Machine-learning-based diagnosis is a possible future enhancement.
