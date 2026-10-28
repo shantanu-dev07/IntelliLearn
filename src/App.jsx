@@ -263,7 +263,7 @@ function App() {
 
       try {
         const response = await fetch(
-          "http://localhost:3000/api/assessments",
+          "https://intellilearn-3g8b.onrender.com/api/assessments",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -280,7 +280,7 @@ if (!response.ok) {
 
 // Reload the saved assessment history.
 const historyResponse = await fetch(
-  "http://localhost:3000/api/assessments",
+  "https://intellilearn-3g8b.onrender.com/api/assessments",
   {
     cache: "no-store",
     headers: {
@@ -357,7 +357,7 @@ setAssessmentHistory(
       }
 
       try {
-        const response = await fetch("http://localhost:3000/api/assessments", {
+        const response = await fetch("https://intellilearn-3g8b.onrender.com/api/assessments", {
         cache: "no-store",
           
             headers: {
@@ -417,7 +417,7 @@ setAssessmentHistory(
 
     try {
       const response = await fetch(
-        `http://localhost:3000/api/auth/${isSignup ? "signup" : "login"}`,
+        `https://intellilearn-3g8b.onrender.com/api/auth/${isSignup ? "signup" : "login"}`,
         {
           method: "POST",
           headers: {
@@ -631,7 +631,7 @@ setSaveStatus("saving");
 
 try {
   const response = await fetch(
-    "http://localhost:3000/api/assessments",
+    "https://intellilearn-3g8b.onrender.com/api/assessments",
     {
       method: "POST",
       headers: {
@@ -658,7 +658,7 @@ if (!response.ok) {
 
 // Refresh the dashboard's assessment history.
 const historyResponse = await fetch(
-  "http://localhost:3000/api/assessments",
+  "https://intellilearn-3g8b.onrender.com/api/assessments",
   {
     cache: "no-store",
     headers: {
